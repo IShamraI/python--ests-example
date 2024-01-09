@@ -1,5 +1,5 @@
 """Test Module to setup TestCases doc"""
-from helpers.common import log_allure_step, pytest_assume
+from helpers import log_allure_step, pytest_assume
 from test_classes.base_test import BaseTest
 
 

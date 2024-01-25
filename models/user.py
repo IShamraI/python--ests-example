@@ -4,6 +4,6 @@ from pydantic import BaseModel
 
 
 class User(BaseModel):
-    id: Optional[int]
+    user_id: Optional[int]
     name: str
     email: str

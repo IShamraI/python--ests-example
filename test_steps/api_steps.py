@@ -10,7 +10,7 @@ class ApiSteps(BaseSteps):
     """
 
     def check_user_exists(self, api: ExampleApi, user_id: int):
-        users = [user for user in api.get_all_users() if user.id == user_id]
+        users = [user for user in api.get_all_users() if user.user_id == user_id]
         pytest_assume(len(users) == 1, f"Received {len(users)} users instead of 1: {users}")
 
     def create_user(self, api: ExampleApi, name: str = "John Doe", email: str = "john.doe@example.com"):

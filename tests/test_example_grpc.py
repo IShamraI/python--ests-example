@@ -1,6 +1,6 @@
 from google.protobuf.json_format import MessageToDict
 
-from helpers import pytest_assume
+from helpers import pytest_assume, wait_until
 from libs.grpc.grpc import GRPCClient
 from models import User
 from test_classes.base_grpc_test import BaseGRPCTest
@@ -27,3 +27,6 @@ class TestGRPCService(BaseGRPCTest):
     #         print(example_grpc_service.user_data)
     #         # assert False
     #         pytest_assume(example_grpc_service.user_data[1] == 1, 1)
+    # wait_until(lambda: self.subs[topic] == True)
+    
+    
